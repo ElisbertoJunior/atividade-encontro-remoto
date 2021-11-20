@@ -23,7 +23,8 @@
         
 
         header {
-            background-color: rgb(81, 99, 104);
+            background-color: rgb(40, 40, 172);
+            opacity: 0.6;
             color: white;
             text-align: center;
         }
@@ -34,18 +35,50 @@
         }
 
         .container{
+            background-color: transparent;
+            width: 500px;
             text-align: center;
-            margin-top: 20%;
+            margin: 20% auto;
         }
 
-        .container input{
+        .row{
+            background: white;
+            border-radius: 50px;
+            opacity: 0.8;
+            padding: 15px;
+        }
+
+        .row input {
             width: 300px;
             height: 30px;
             margin: 5px;
             background-color: transparent;
             border-top: none !important;
-            border-width: none !important;
-            
+            border-left: none !important;
+            border-right: none !important;
+            border-bottom: 3px solid black;     
+        }
+
+        .container input:[type="text"]{
+            color: black !important;
+        }
+
+        button{
+            width: 150px !important;
+            height: 30px;
+            margin-top: 10px;
+            background-color: rgb(40, 40, 172);
+            color: bisque;
+            cursor: pointer;
+        }
+
+        p {
+            margin: 15px;
+    
+        }
+
+        p > a{
+            color: black;
         }
     </style>
 </head>
@@ -56,8 +89,16 @@
 
     <div class="center">
         <div class="container">
-            <input type="text" placeholder="Digite sei ID..."><br>
-            <input type="text" placeholder="Digite sua senha...">
+            <div class="row">
+                <label>ID:</label>
+                <input type="text" placeholder="Digite sei ID..."><br>
+                <label>senha:</label>
+                <input type="text" placeholder="Digite sua senha..."><br>
+                <button>Entrar</button><br>
+
+                <p><a href="">Esqueceu a senha?</a></p>
+            </div>
+          
         </div>
     </div>
     
