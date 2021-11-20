@@ -1,106 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atividade Encontro remoto</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        html, body {
-            height: 100%;
-            background-image: url(imagem-de-fundo.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
+      html,
+      body {
+        height: 100%;
+        background-image: url(imagem-de-fundo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
 
-        
+      header {
+        background-color: rgb(40, 40, 172);
+        opacity: 0.6;
+        color: white;
+        text-align: center;
+      }
 
-        header {
-            background-color: rgb(40, 40, 172);
-            opacity: 0.6;
-            color: white;
-            text-align: center;
-        }
+      .center {
+        max-width: 1280px;
+        margin: 0 auto;
+      }
 
-        .center{
-            max-width: 1280px;
-            margin: 0 auto;
-        }
+      .container {
+        background-color: transparent;
+        width: 500px;
+        text-align: center;
+        margin: 20% auto;
+      }
 
-        .container{
-            background-color: transparent;
-            width: 500px;
-            text-align: center;
-            margin: 20% auto;
-        }
+      .row {
+        background: white;
+        border-radius: 50px;
+        opacity: 0.8;
+        padding: 15px;
+      }
 
-        .row{
-            background: white;
-            border-radius: 50px;
-            opacity: 0.8;
-            padding: 15px;
-        }
+      .row input {
+        width: 300px;
+        height: 30px;
+        margin: 5px;
+        background-color: transparent;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: 3px solid black;
+      }
 
-        .row input {
-            width: 300px;
-            height: 30px;
-            margin: 5px;
-            background-color: transparent;
-            border-top: none !important;
-            border-left: none !important;
-            border-right: none !important;
-            border-bottom: 3px solid black;     
-        }
+      .container input[type="text"] {
+        color: black !important;
+      }
 
-        .container input:[type="text"]{
-            color: black !important;
-        }
+      button {
+        width: 150px !important;
+        height: 30px;
+        margin-top: 10px;
+        background-color: rgb(40, 40, 172);
+        color: white;
+        cursor: pointer;
+      }
 
-        button{
-            width: 150px !important;
-            height: 30px;
-            margin-top: 10px;
-            background-color: rgb(40, 40, 172);
-            color: bisque;
-            cursor: pointer;
-        }
+      p {
+        margin: 15px;
+      }
 
-        p {
-            margin: 15px;
-    
-        }
-
-        p > a{
-            color: black;
-        }
+      p > a {
+        color: black;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Encontro remoto</h1>
+      <h1>Encontro remoto</h1>
     </header>
 
     <div class="center">
-        <div class="container">
-            <div class="row">
-                <label>ID:</label>
-                <input type="text" placeholder="Digite sei ID..."><br>
-                <label>senha:</label>
-                <input type="text" placeholder="Digite sua senha..."><br>
-                <button>Entrar</button><br>
+      <div class="container">
+        <div class="row">
+          <label>ID:</label>
+          <input type="text" placeholder="Digite sei ID..." /><br />
+          <label>senha:</label>
+          <input type="text" placeholder="Digite sua senha..." /><br />
+          <button>Entrar</button><br />
 
-                <p><a href="">Esqueceu a senha?</a></p>
-            </div>
-          
+          <p><a href="">Esqueceu a senha?</a></p>
         </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
